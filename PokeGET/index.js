@@ -1,7 +1,7 @@
 module.exports = async function (context, req) {
     //Conexão para o mongodb
     const { MongoClient } = require("mongodb");
-    const url = "mongodb+srv://Giovanni:StarWars2021@starkindustries.r6do7.mongodb.net/";
+    const url = "mongodb+srv://<usuário>:<senha>@starkindustries.r6do7.mongodb.net/";
     const client = new MongoClient(url);
     await client.connect();
     const database = client.db("API");
